@@ -20,7 +20,7 @@ def produce_image():
 		for k in range(height):
 			r = i % 256
 			g = k % 256
-			b = b+1
+			b = (i+k)%500
 			file.write("{} {} {} ".format(r,g,b))
 			# r = r-1
 			# g = g+1 
